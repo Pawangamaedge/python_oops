@@ -106,6 +106,20 @@ class Protected_class:
           print(f"your name is: {self._person_name}")
           print(f"your age is: {self._person_age}")
 
+     # @staticmethod
+     # def define_hello():
+     #      print(f"hello: {self._person_name}")    # this code will occur error
+
+     # @staticmethod
+     # def hello(name):
+     #      print(f"hello: {name}")    # this will run
+ 
+     @staticmethod
+     def hello():
+          print("hello this is python programming")
+pe = Protected_class('ajay', 40)
+pe.hello()
+
 class Extended_protected_class(Protected_class):
      def __init__(self, name, age, salary, location, department):
           super().__init__(name, age)
@@ -125,9 +139,9 @@ class Extended_protected_class(Protected_class):
           print(f"your location is: {self._person_location}")
           print(f"your department is: {self._person_department}")
 
-ep_protected = Extended_protected_class('ajay', 40, 30000,'indore', 'it_department')
-ep_protected.display_info()
-ep_protected.person_display_name()
-ep_protected.person_display_age()
-print(f"name: {ep_protected._person_name}")
+# ep_protected = Extended_protected_class('ajay', 40, 30000,'indore', 'it_department')
+# ep_protected.display_info()
+# ep_protected.person_display_name()
+# ep_protected.person_display_age()
+# print(f"name: {ep_protected._person_name}")
 
